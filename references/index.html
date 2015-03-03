@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Namespaces - Yaaf.Xmpp.IM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Matthias Dittrich">
+
+    <script src="https://code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.Xmpp.IM/content/style.css" />
+    <link type="text/css" rel="stylesheet" href="https://matthid.github.io/Yaaf.Xmpp.IM/content/prism.css" />
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.Xmpp.IM/content/tips.js"></script>
+    <script type="text/javascript" src="https://matthid.github.io/Yaaf.Xmpp.IM/content/prism.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="http://fsharp.org">fsharp.org</a></li>
+          <li><a href="http://tpetricek.github.io/FSharp.Formatting/"><img height="16" width="16" src="https://matthid.github.io/Yaaf.AdvancedBuilding/content/img/FSharp.Formatting.png" /> F# Formatting</a></li>
+        </ul>
+        <h3 class="muted"><a href="https://matthid.github.io/Yaaf.Xmpp.IM/index.html">Yaaf.Xmpp.IM</a></h3>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="span9" id="main">
+          
+
+<h1>Yaaf.Xmpp.IM</h1>
+
+<h2><a name="Overview" class="anchor" href="#Overview">Overview</a></h2>
+    <a href="#Yaaf.Xmpp.IM">Yaaf.Xmpp.IM</a><br />
+    <a href="#Yaaf.Xmpp.IM.DelayedDelivery">Yaaf.Xmpp.IM.DelayedDelivery</a><br />
+    <a href="#Yaaf.Xmpp.IM.MessageCarbons">Yaaf.Xmpp.IM.MessageCarbons</a><br />
+    <a href="#Yaaf.Xmpp.IM.MessageCarbons.Server">Yaaf.Xmpp.IM.MessageCarbons.Server</a><br />
+    <a href="#Yaaf.Xmpp.IM.Server">Yaaf.Xmpp.IM.Server</a><br />
+    <a href="#Yaaf.Xmpp.IM.StanzaForwarding">Yaaf.Xmpp.IM.StanzaForwarding</a><br />
+    <a href="#Yaaf.Xmpp.Runtime.Features">Yaaf.Xmpp.Runtime.Features</a><br />
+
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.Xmpp.IM/content/img/back_to_top.png" alt="Back to top" /></a> <a name="Yaaf.Xmpp.IM" class="anchor" href="#Yaaf.Xmpp.IM">Yaaf.Xmpp.IM Namespace</a></h2>
+    <div>
+        <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-asktype.html">AskType</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-iimservice.html">IImService</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-messagedata.html">MessageData</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-messageplugin.html">MessagePlugin</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-messagestanza.html">MessageStanza</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-messagetype.html">MessageType</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-presencedata.html">PresenceData</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-presenceprocessingtype.html">PresenceProcessingType</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-presencestanza.html">PresenceStanza</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-presencestatus.html">PresenceStatus</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-presencetype.html">PresenceType</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-rosteraction.html">RosterAction</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-rosterchange.html">RosterChange</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-rostergetresult.html">RosterGetResult</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-rosteritem.html">RosterItem</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-rosterstanza.html">RosterStanza</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-rosterversion.html">RosterVersion</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-showtype.html">ShowType</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-statusdata.html">StatusData</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-subscriptiontype.html">SubscriptionType</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-assemblyinfo.html">AssemblyInfo</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-parsing.html">Parsing</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-xmppsetup.html">XmppSetup</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.Xmpp.IM/content/img/back_to_top.png" alt="Back to top" /></a> <a name="Yaaf.Xmpp.IM.DelayedDelivery" class="anchor" href="#Yaaf.Xmpp.IM.DelayedDelivery">Yaaf.Xmpp.IM.DelayedDelivery Namespace</a></h2>
+    <div>
+        <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-delayeddelivery-delayinfo.html">DelayInfo</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-delayeddelivery-delay.html">Delay</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-delayeddelivery-parsing.html">Parsing</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-delayeddelivery-stanza.html">Stanza</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-delayeddelivery-stanzaextensions.html">StanzaExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.Xmpp.IM/content/img/back_to_top.png" alt="Back to top" /></a> <a name="Yaaf.Xmpp.IM.MessageCarbons" class="anchor" href="#Yaaf.Xmpp.IM.MessageCarbons">Yaaf.Xmpp.IM.MessageCarbons Namespace</a></h2>
+    <div>
+        <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-messagecarbons-carboninfo.html">CarbonInfo</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-messagecarbons-carboniqaction.html">CarbonIqAction</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-messagecarbons-carboniqstanza.html">CarbonIqStanza</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-messagecarbons-carbontype.html">CarbonType</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-messagecarbons-messagecarbonpayload.html">MessageCarbonPayload</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-messagecarbons-parsing.html">Parsing</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-messagecarbons-stanza.html">Stanza</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-messagecarbons-stanzaextensions.html">StanzaExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.Xmpp.IM/content/img/back_to_top.png" alt="Back to top" /></a> <a name="Yaaf.Xmpp.IM.MessageCarbons.Server" class="anchor" href="#Yaaf.Xmpp.IM.MessageCarbons.Server">Yaaf.Xmpp.IM.MessageCarbons.Server Namespace</a></h2>
+    <div>
+        <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-messagecarbons-server-icarbonservice.html">ICarbonService</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-messagecarbons-server-messagecarbonsplugin.html">MessageCarbonsPlugin</a>
+          </td>
+          <td class="xmldoc">
+ Implementation of http://xmpp.org/extensions/xep-0280.html (XEP-0280: Message Carbons).
+ This plugin is a server side plugin.
+</br></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.Xmpp.IM/content/img/back_to_top.png" alt="Back to top" /></a> <a name="Yaaf.Xmpp.IM.Server" class="anchor" href="#Yaaf.Xmpp.IM.Server">Yaaf.Xmpp.IM.Server Namespace</a></h2>
+    <div>
+        <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-asynctype.html">AsyncType</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-concurrentrosterstore.html">ConcurrentRosterStore</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-concurrentuserroster.html">ConcurrentUserRoster</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-iimserverconfig.html">IImServerConfig</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-iimservermessagepluginconfig.html">IImServerMessagePluginConfig</a>
+          </td>
+          <td class="xmldoc">The configuration for the UNRESOLVED(IMServerMessagePlugin) plugin</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-iimservermessageservice.html">IImServerMessageService</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-iimserverservice.html">IImServerService</a>
+          </td>
+          <td class="xmldoc"> The IImServerService represents the service provided by the UNRESOLVED(IMServerPlugin) plugin. </br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-ilocalmessagereceivestanzaplugin.html">ILocalMessageReceiveStanzaPlugin</a>
+          </td>
+          <td class="xmldoc">
+ Plugin for the LocalMessageReceive pipeline (server received a stanza that has to be processed locally)
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-ilocalmessagesendstanzaplugin.html">ILocalMessageSendStanzaPlugin</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-imservermessageplugin.html">IMServerMessagePlugin</a>
+          </td>
+          <td class="xmldoc">
+ Handling of messages specified by XMPP.IM and http://xmpp.org/extensions/xep-0160.html
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-imserverplugin.html">IMServerPlugin</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-imessagepipelineservice.html">IMessagePipelineService</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-iofflinemessagestorage.html">IOfflineMessageStorage</a>
+          </td>
+          <td class="xmldoc">
+ Offline messages are in this context messages which are currently not delivered
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-irawmessagestanzaplugin.html">IRawMessageStanzaPlugin</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-iremotemessagesendstanzaplugin.html">IRemoteMessageSendStanzaPlugin</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-irosterstore.html">IRosterStore</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-iusermessageuserconfig.html">IUserMessageUserConfig</a>
+          </td>
+          <td class="xmldoc">
+ Manager of the user configurations
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-iuserroster.html">IUserRoster</a>
+          </td>
+          <td class="xmldoc">
+ This type represents the storage of an roster, most methods MUST ignore the resourcepart of the JabberId (read 'XMPP IM' rfc6121 for details).
+ This behavior tested with unit tests.
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-immessageuserconfig.html">ImMessageUserConfig</a>
+          </td>
+          <td class="xmldoc">
+ User configuration for messages.
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-imserverconfig.html">ImServerConfig</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-imservermessagepluginconfig.html">ImServerMessagePluginConfig</a>
+          </td>
+          <td class="xmldoc">The configuration for the UNRESOLVED(IMServerMessagePlugin) plugin</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-memoryrosterstore.html">MemoryRosterStore</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-memoryuserroster.html">MemoryUserRoster</a>
+          </td>
+          <td class="xmldoc">
+ simple memory store
+</br></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-messagepipelineplugin.html">MessagePipelinePlugin</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-server-resourcesendingstrategy.html">ResourceSendingStrategy</a>
+          </td>
+          <td class="xmldoc">
+ A resource sending strategie for messages
+</br></td>
+        </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-server-imserverserviceextensions.html">ImServerServiceExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-server-xmppserversetup.html">XmppServerSetup</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-server-xmppsetup.html">XmppSetup</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.Xmpp.IM/content/img/back_to_top.png" alt="Back to top" /></a> <a name="Yaaf.Xmpp.IM.StanzaForwarding" class="anchor" href="#Yaaf.Xmpp.IM.StanzaForwarding">Yaaf.Xmpp.IM.StanzaForwarding Namespace</a></h2>
+    <div>
+        <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-stanzaforwarding-forwardinfo.html">ForwardInfo</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-stanzaforwarding-forwardpayload.html">ForwardPayload</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-im-stanzaforwarding-forwardingplugin.html">ForwardingPlugin</a>
+          </td>
+          <td class="xmldoc">
+ A simple plugin to announce the forward feature in service discovery
+</br></td>
+        </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-stanzaforwarding-parsing.html">Parsing</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-stanzaforwarding-stanza.html">Stanza</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-im-stanzaforwarding-stanzaextensions.html">StanzaExtensions</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+    <h2><a href="#Overview"><img src="https://matthid.github.io/Yaaf.Xmpp.IM/content/img/back_to_top.png" alt="Back to top" /></a> <a name="Yaaf.Xmpp.Runtime.Features" class="anchor" href="#Yaaf.Xmpp.Runtime.Features">Yaaf.Xmpp.Runtime.Features Namespace</a></h2>
+    <div>
+        <table class="table table-bordered type-list">
+    <thead>
+      <tr><td>Type</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-runtime-features-preapprovalfeature.html">PreApprovalFeature</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-runtime-features-rosterverfeature.html">RosterVerFeature</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-runtime-features-sessionelement.html">SessionElement</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="type-name">
+            <a href="yaaf-xmpp-runtime-features-sessionfeature.html">SessionFeature</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+  <table class="table table-bordered module-list">
+    <thead>
+      <tr><td>Module</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-runtime-features-parsingfeaturesession.html">ParsingFeatureSession</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-runtime-features-parsingpreapproval.html">ParsingPreApproval</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+        <tr>
+          <td class="module-name">
+            <a href="yaaf-xmpp-runtime-features-parsingrosterver.html">ParsingRosterVer</a>
+          </td>
+          <td class="xmldoc"></td>
+        </tr>
+    </tbody>
+  </table>
+
+    </div>
+
+        </div>
+        <div class="span3">
+          <a href="https://matthid.github.io/Yaaf.Xmpp.IM/index.html">
+            <img src="https://matthid.github.io/Yaaf.Xmpp.IM/content/img/logo.png" style="width:140px;height:140px;margin:10px 0px 0px 35px;border-style:none;" />
+          </a>
+
+          <ul class="nav nav-list" id="menu">
+
+            <li class="nav-header">Yaaf.Xmpp.IM</li>
+
+            <li class="divider"></li>
+            <li><a href="https://www.nuget.org/packages/Yaaf.Xmpp.IM/">Get Yaaf.Xmpp.IM package via NuGet</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.Xmpp.IM">Source Code</a></li>
+            <li><a href="https://github.com/matthid//issues">Open bugs and feature requests</a></li>
+            <li><a href="https://github.com/matthid//issues/new">Report Issue or Request Feature</a></li>
+            <li><a href="https://github.com/matthid/Yaaf.Xmpp.IM/blob/develop/LICENSE.md">License (Apache 2)</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.Xmpp.IM/Contributing.html">Contributing</a></li>
+            
+            <li class="nav-header">Documentation</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.Xmpp.IM/index.html">Quick Intro</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.Xmpp.IM/ReleaseNotes.html">Release Notes</a></li>
+            <li><a href="https://matthid.github.io/Yaaf.Xmpp.IM/DevelopReadme.html">Development Intro</a></li>
+
+            <li class="nav-header">Reference</li>
+              
+            <li><a href="https://matthid.github.io/Yaaf.Xmpp.IM/references/index.html">API Reference</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+      <a href="https://github.com/matthid/Yaaf.Xmpp.IM"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+    </body>
+  </html>
