@@ -67,6 +67,7 @@
     <Compile Include="XmppIMServerPluginTest.fs" />
     <Compile Include="XmppImServerMessagePluginTest.fs" />
     <Compile Include="DelayTest.fs" />
+    <Compile Include="IMParsingTest.fs" />
     <Compile Include="XmppImServerComponentTest.fs" />
     <None Include="Script.fsx" />
     <None Include="app.config" />

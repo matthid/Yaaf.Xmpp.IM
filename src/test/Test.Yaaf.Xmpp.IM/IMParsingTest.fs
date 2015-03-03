@@ -20,7 +20,7 @@ open Test.Yaaf.Xmpp
 [<TestFixture>]
 type ``Test-Yaaf-Xmpp-IM-Parsing: Test that rosterparsing works``() as this =
     inherit XmlStanzaParsingTestClass()
-    let rosterTest stanzaString (info:RawStanza) (elem:RosterAction) = 
+    let rosterTest stanzaString (info:Stanza) (elem:RosterAction) = 
         let newStanza = Parsing.createRosterElement info.Header.Id.Value (info.Header.From) (info.Header.To) elem
         this.GenericTest Parsing.rosterContentGenerator stanzaString newStanza
 
