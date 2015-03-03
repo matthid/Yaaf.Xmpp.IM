@@ -1,0 +1,25 @@
+source https://nuget.org/api/v2
+
+//Build
+nuget Yaaf.AdvancedBuilding
+nuget NUnit.Runners
+// Until windows support is fixed
+nuget FSharp.Formatting == 2.6.3
+
+// Project
+nuget FSharp.Core
+nuget Yaaf.FSharp.Helper
+nuget Yaaf.Xmpp.Runtime
+nuget Yaaf.Xmpp.ServiceDiscovery
+
+// Test
+// Until Visual Studio test runner supports later versions.
+nuget NUnit == 2.6.3
+nuget Unquote
+nuget Foq
+nuget FsUnit
+
+github matthid/Yaaf.FSharp.Helper src/test/Test.Yaaf.FSharp.Helper/MyTestClass.fs
+github matthid/Yaaf.FSharp.Helper src/test/Test.Yaaf.FSharp.Helper/StreamTestClass.fs
+github matthid/Yaaf.Xmpp.Runtime:develop src/test/Test.Yaaf.Xml/XmlTestHelper.fs
+github matthid/Yaaf.Xmpp.Runtime:develop src/test/Test.Yaaf.Xmpp.Runtime/TestHelper.fs
