@@ -64,6 +64,7 @@
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="ParsingRoster.fs" />
     <Compile Include="RosterStoreTests.fs" />
+    <Compile Include="MemoryRosterStoreTests.fs" />
     <Compile Include="XmppIMServerPluginTest.fs" />
     <Compile Include="XmppImServerMessagePluginTest.fs" />
     <Compile Include="DelayTest.fs" />

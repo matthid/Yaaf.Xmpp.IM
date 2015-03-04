@@ -7,19 +7,15 @@ open FsUnit
 open NUnit.Framework
 open Yaaf.Helper
 open Yaaf.TestHelper
-open Test.Yaaf.Xmpp
 open Yaaf.Xmpp
-open Yaaf.Xmpp.IM.Server
 open Yaaf.Xmpp.IM
 open Swensen.Unquote
-open Foq
 
-
-type ``Test-Yaaf-Xmpp-IM-Server-IRosterStore: check interface specification``() =
+[<AbstractClass>]
+type RosterStoreTests() =
     inherit MyTestClass()
     let mutable msgStore = Unchecked.defaultof<_>
     abstract member CreateRosterStore : unit -> (Yaaf.Xmpp.IM.Server.IRosterStore)
-    default x.CreateRosterStore () = new MemoryRosterStore() :> Yaaf.Xmpp.IM.Server.IRosterStore
 
     override x.Setup () = 
         // Setup DataDirectory for databases
